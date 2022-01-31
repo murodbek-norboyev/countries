@@ -1,14 +1,23 @@
 <template>
-  <v-container>
+  <v-container v-if="load === true">
+    <filter-bar/>
     <v-row>
-      <filter-bar/>
+      <v-col></v-col>
     </v-row>
   </v-container>
+  <loading v-else></loading>
 </template>
 <script>
 import FilterBar from '../components/FilterBar'
+import Loading from '../components/loading'
 
 export default {
-  components: { FilterBar }
+  components: {
+    Loading,
+    FilterBar
+  },
+  data: () => ({
+    load: false
+  })
 }
 </script>

@@ -4,12 +4,12 @@ import router from './router'
 import store from './store'
 import vuetify from './plugins/vuetify'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons'
+import { faMoon, faSun, faSearch } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 Vue.config.productionTip = false
 
-library.add(faMoon, faSun)
+library.add(faMoon, faSun, faSearch)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 new Vue({

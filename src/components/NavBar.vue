@@ -1,7 +1,6 @@
 <template>
   <v-app-bar
-    app
-  >
+    app>
     <div class="d-flex align-center"><h2>Where in the world?</h2></div>
 
     <v-spacer></v-spacer>
