@@ -1,5 +1,5 @@
 <template>
-  <v-col cols="3">
+  <v-col cols="12" sm="4" lg="3">
     <v-card
       @click="goCountryDetailPage">
       <v-img height="200" :src="countryData.flag"></v-img>
@@ -19,15 +19,9 @@ export default {
   props: {
     countryData: Object
   },
-  filters: {
-    // capitalize more than one space seperated words
-    showDecimalPoint (val) {
-      return val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.')
-    }
-  },
   methods: {
     goCountryDetailPage () {
-      this.$router.push({ path: `/${this.countryData.name}` })
+      this.$router.push({ path: `${this.countryData.name}` })
     }
   }
 }

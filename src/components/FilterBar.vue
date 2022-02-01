@@ -1,7 +1,9 @@
 <template>
   <v-row justify="space-between" class="mt-10 mb-5">
     <v-col
-      cols="4">
+      cols="12"
+      sm="6"
+      md="4">
       <v-text-field
         label="Search"
         v-model="search"
@@ -11,7 +13,9 @@
       </v-text-field>
     </v-col>
     <v-col
-      cols="3">
+      cols="12"
+      sm="6"
+      md="3">
       <v-select
         label="Select region"
         v-model="region"

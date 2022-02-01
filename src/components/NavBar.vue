@@ -1,7 +1,7 @@
 <template>
   <v-app-bar
     app>
-    <div class="d-flex align-center"><h2>Where in the world?</h2></div>
+    <h2 @click="goBack()">Where in the world?</h2>
 
     <v-spacer></v-spacer>
 
@@ -24,6 +24,9 @@
 export default {
   name: 'NavBar',
   methods: {
+    goBack () {
+      this.$router.push({ path: '/' })
+    },
     darkMode () {
       this.$vuetify.theme.dark = !this.$vuetify.theme.dark
     }
