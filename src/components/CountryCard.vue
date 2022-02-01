@@ -2,12 +2,12 @@
   <v-col cols="3">
     <v-card
       @click="goCountryDetailPage">
-      <v-img height="150" :src="countryData.flag"></v-img>
+      <v-img height="200" :src="countryData.flag"></v-img>
       <v-card-title>{{ countryData.name }}</v-card-title>
       <v-card-text>
         <p><strong>Population: </strong> {{ countryData.population }}</p>
         <p><strong>Region: </strong> {{ countryData.region }}</p>
-        <p><strong>Capital: </strong> {{ countryData.capital }}</p>
+        <p class="mb-0"><strong>Capital: </strong> {{ countryData.capital }}</p>
       </v-card-text>
     </v-card>
   </v-col>
